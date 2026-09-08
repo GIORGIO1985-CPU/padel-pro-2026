@@ -3,41 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Torneo Padel Pro 2026</title>
 
 <style>
+
 body{
     margin:0;
     font-family:Segoe UI, Arial, sans-serif;
     background:#0d2f23;
     color:white;
+    font-size:18px;
+    line-height:1.5;
 }
 
 .hero{
     background:linear-gradient(135deg,#0f5132,#198754);
-    padding:25px;
+    padding:30px;
 }
 
 .hero h1{
     margin:0;
-    font-size:30px;
+    font-size:34px;
+}
+
+.hero p{
+    margin-top:10px;
 }
 
 .container{
-    padding:15px;
+    padding:18px;
 }
 
 .card{
     background:#18221f;
-    margin-bottom:15px;
-    padding:18px;
-    border-radius:18px;
-    box-shadow:0 4px 12px rgba(0,0,0,.3);
+    padding:22px;
+    border-radius:20px;
+    margin-bottom:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.25);
+}
+
+.card h2{
+    margin-top:0;
+    font-size:26px;
+}
+
+.card h3{
+    font-size:22px;
 }
 
 .progress{
     background:#333;
-    height:18px;
+    height:24px;
     border-radius:20px;
     overflow:hidden;
 }
@@ -50,37 +67,48 @@ body{
 
 .match{
     border-bottom:1px solid #333;
-    padding:10px 0;
+    padding:15px 0;
 }
 
-.menu{
-    position:fixed;
-    bottom:0;
-    left:0;
+.match:last-child{
+    border-bottom:none;
+}
+
+table{
     width:100%;
-    background:#111;
-    display:flex;
-    justify-content:space-around;
-    padding:12px 0;
+    border-collapse:collapse;
 }
 
-.menu div{
-    text-align:center;
-    font-size:12px;
-}
-
-main{
-    padding-bottom:80px;
+th,td{
+    padding:10px 6px;
+    border-bottom:1px solid #333;
+    font-size:15px;
 }
 
 details{
-    margin-bottom:10px;
+    background:#111;
+    border-radius:12px;
+    padding:12px;
+    margin-bottom:12px;
 }
 
 summary{
     cursor:pointer;
-    padding:8px;
+    font-weight:bold;
 }
+
+.podio{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.footer{
+    text-align:center;
+    color:#bbb;
+    padding:40px 0;
+}
+
 </style>
 
 </head>
@@ -92,60 +120,141 @@ summary{
     <p>16 Giocatori • 15 Giornate • Montepremi €320</p>
 </div>
 
-<main class="container">
+<div class="container">
 
 <div class="card">
-    <h2>📅 Giornata in corso</h2>
-    <h3>Giornata 1</h3>
-    <p>13/09/2026 - 20/09/2026</p>
 
-    <div class="progress">
-        <div class="progress-bar"></div>
-    </div>
+<h2>📅 Giornata in corso</h2>
 
-    <p>1 giornata su 15 • 7%</p>
+<h3>Giornata 1</h3>
+
+<p>13/09/2026 - 20/09/2026</p>
+
+<div class="progress">
+<div class="progress-bar"></div>
+</div>
+
+<p>
+📊 Avanzamento Torneo<br>
+Giornata 1 di 15<br>
+7% completato<br>
+⏳ Mancano 14 giornate
+</p>
+
 </div>
 
 <div class="card">
-    <h2>⏭️ Prossima giornata</h2>
-    <h3>Giornata 2</h3>
-    <p>21/09/2026 - 27/09/2026</p>
+
+<h2>⏭️ Prossima giornata</h2>
+
+<h3>Giornata 2</h3>
+
+<p>21/09/2026 - 27/09/2026</p>
+
 </div>
 
 <div class="card">
-    <h2>🎾 Partite della settimana</h2>
 
-    <div class="match">
-        Legrottaglie / Vannella<br>
-        <strong>VS</strong><br>
-        Masotti / Il Barbiere
-    </div>
+<h2>🎾 Partite della settimana</h2>
 
-    <div class="match">
-        Cavaliere / Elia<br>
-        <strong>VS</strong><br>
-        Lomito / Maggi
-    </div>
+<div class="match">
+Valeriano Legrottaglie / Alessandro Vannella<br>
+<b>VS</b><br>
+Giorgio Masotti / Giovanni Il Barbiere
+</div>
 
-    <div class="match">
-        D'Amico / Alberto Albasana<br>
-        <strong>VS</strong><br>
-        Ippolito / Luca Masotti
-    </div>
+<div class="match">
+Vincenzo Cavaliere / Lorenzo Elia<br>
+<b>VS</b><br>
+Lorenzo Lomito / Nicola Maggi
+</div>
 
-    <div class="match">
-        Ostuni / Bagordo<br>
-        <strong>VS</strong><br>
-        Maglionico / Convertini
-    </div>
+<div class="match">
+Giuseppe D'Amico / Alberto Albasana<br>
+<b>VS</b><br>
+Salvatore Ippolito / Luca Masotti
+</div>
+
+<div class="match">
+Gino Ostuni / Paolo Bagordo<br>
+<b>VS</b><br>
+Angelo Maglionico / Piero Convertini
+</div>
+
 </div>
 
 <div class="card">
-    <h2>🏆 Classifica</h2>
 
-    <ol>
-        <li>Valeriano Legrottaglie</li>
-        <li>Giorgio Masotti</li>
-        <li>Vincenzo Cavaliere</li>
-        <li>Lorenzo Lomito</li>
-     
+<h2>🏆 Podio Provvisorio</h2>
+
+<div class="podio">
+🥇 ---<br>
+🥈 ---<br>
+🥉 ---
+</div>
+
+<p>Tutti i giocatori iniziano da 0 punti.</p>
+
+</div>
+
+<div class="card">
+
+<h2>🏆 Classifica</h2>
+
+<table>
+
+<tr>
+<th>Pos</th>
+<th>Giocatore</th>
+<th>Pt</th>
+<th>Diff</th>
+<th>V</th>
+</tr>
+
+<tr><td>1</td><td>Valeriano Legrottaglie</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>2</td><td>Giorgio Masotti</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>3</td><td>Vincenzo Cavaliere</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>4</td><td>Lorenzo Lomito</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>5</td><td>Giuseppe D'Amico</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>6</td><td>Salvatore Ippolito</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>7</td><td>Gino Ostuni</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>8</td><td>Angelo Maglionico</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>9</td><td>Piero Convertini</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>10</td><td>Paolo Bagordo</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>11</td><td>Luca Masotti</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>12</td><td>Alberto Albasana</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>13</td><td>Nicola Maggi</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>14</td><td>Lorenzo Elia</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>15</td><td>Giovanni Il Barbiere</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>16</td><td>Alessandro Vannella</td><td>0</td><td>0</td><td>0</td></tr>
+
+</table>
+
+<p style="font-size:14px;color:#aaa;">
+Classifica ordinata per:
+Punti (Set Vinti) → Differenza Set → Vittorie
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>💰 Montepremi</h2>
+
+🥇 140 €<br>
+🥈 100 €<br>
+🥉 80 €<br><br>
+
+Totale: 320 €
+
+</div>
+
+<div class="card">
+
+<h2>📅 Calendario Torneo</h2>
+
+<details><summary>Giornata 1 • 13/09/2026 - 20/09/2026</summary><p>4 partite programmate</p></details>
+<details><summary>Giornata 2 • 21/09/2026 - 27/09/2026</summary><p>4 partite programmate</p></details>
+<details><summary>Giornata 3 • 28/09/2026 - 04/10/2026</summary><p>4 partite programmate</p></details>
+<details><summary>Giornata 4 • 05/10/2026 - 11/10/2026</summary><p>4 partite programmate</p></details>
+<details><summary>Giornata 5 • 12/10/2026 - 18/10/2026</summary><p>4 partite 
